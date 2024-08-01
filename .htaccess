@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+
+
+RewriteRule ^anasehife$   index.php [L,QSA]
+RewriteRule ^oyunlar$   games.php [L,QSA]
+RewriteRule ^proqramlar$   proqramlar.php [L,QSA]
+RewriteRule ^haqqimizda$   haqqimizda.php [L,QSA]
+
+RewriteRule ^app-etrafli/([0-9a-zA-Z-_]+)/([0-9]+)$   appdetal.php?sef=$1&app_id=$2 [L,QSA]
+
